@@ -1,0 +1,18 @@
+﻿@model Exam2.Models.Quote
+
+@{
+    ViewData["Title"] = "Random Quote";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1 class="text-center">Random Quote of the Day:</h1>
+
+@{ 
+    //well, I messed around with this for a while but couldn't quite get it I guess.  My thinking was that I would get a random quote id doing something that would basically give us
+    //Rand = Random.Next(recordsintable.Count())
+    //Then do a Find the quote by saying something like
+    //Models.QuoteId == Rand ? myQuote = Models.QuoteText
+    //and then just throw myQuote into like a p tag or something.  I guess probably I would just do 
+    //<p>@myQuote</p>
+    //would've been cool but I spent a ton of time fixing a stupid database error that took up all my time haha.  Oh well.  Thanks for grading!
+}
